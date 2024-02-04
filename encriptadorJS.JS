@@ -17,13 +17,13 @@ function encriptar() {
     .replace(/o/gi, "ober")
     .replace(/u/gi, "ufat");
 
-  if (cajatext.length != 0) { // Cambiado de texto.length a cajatext.length
+  if (cajatext.length != 0) { 
     document.getElementById("cajatext").value = textoCifrado;
     mensaje.textContent = "El texto ha encriptado exitosamente";
     parrafo.textContent = "";
     personaje.src = "./imagenes/aprobado.png";
   } else {
-    personaje.src = "./imagenes/muneco.svg"; // Cambiado de /imagenes/Muñeco.svg a ./imagenes/Muñeco.svg
+    personaje.src = "./imagenes/muneco.svg"; 
     mensaje.textContent = "Ningún mensaje fue encontrado";
     parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
     swal("Ooops!", "Debes ingresar un texto para encriptar", "warning");
@@ -48,11 +48,11 @@ function desencriptar() {
     .replace(/ober/gi, "o")
     .replace(/ufat/gi, "u");
   
-  if (cajatext.length != 0) { // Cambiado de texto.length a cajatext.length
+  if (cajatext.length != 0) { 
     document.getElementById("cajatext").value = textoCifrado;
     mensaje.textContent = "El texto ha desencriptado exitosamente";
     parrafo.textContent = "";
-    personaje.src = "./imagenes/aprobado.png"; // Cambiado de muñeco.src a personaje.src
+    personaje.src = "./imagenes/aprobado.png"; 
   } else {
     personaje.src = "./imagenes/muneco.svg";
     mensaje.textContent = "Ningún mensaje fue encontrado.";
