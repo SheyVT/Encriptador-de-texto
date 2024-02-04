@@ -19,7 +19,7 @@ function encriptar() {
 
   if (cajatext.length != 0) { // Cambiado de texto.length a cajatext.length
     document.getElementById("cajatext").value = textoCifrado;
-    mensaje.textContent = "El texto ha encriptado con exitosamente";
+    mensaje.textContent = "El texto ha encriptado exitosamente";
     parrafo.textContent = "";
     personaje.src = "./imagenes/aprobado.png";
   } else {
