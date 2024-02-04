@@ -23,7 +23,7 @@ function encriptar() {
     parrafo.textContent = "";
     personaje.src = "./imagenes/aprobado.png";
   } else {
-    personaje.src = "./imagenes/munecco.svg"; // Cambiado de /imagenes/Muñeco.svg a ./imagenes/Muñeco.svg
+    personaje.src = "./imagenes/muneco.svg"; // Cambiado de /imagenes/Muñeco.svg a ./imagenes/Muñeco.svg
     mensaje.textContent = "Ningún mensaje fue encontrado";
     parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
     swal("Ooops!", "Debes ingresar un texto para encriptar", "warning");
