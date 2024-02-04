@@ -50,7 +50,7 @@ function desencriptar() {
   
   if (cajatext.length != 0) { // Cambiado de texto.length a cajatext.length
     document.getElementById("cajatext").value = textoCifrado;
-    mensaje.textContent = "El texto ha desencriptado con exitosamente";
+    mensaje.textContent = "El texto ha desencriptado exitosamente";
     parrafo.textContent = "";
     personaje.src = "./imagenes/aprobado.png"; // Cambiado de muñeco.src a personaje.src
   } else {
