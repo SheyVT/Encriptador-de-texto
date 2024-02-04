@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Challenge Encriptador</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='encriptadorcss.css'>
+        <link href="https://fonts.google.com/share?selection.family=Inter:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+    <body>
+       <div class="contenedor">
+<div class="contenedor-caja-texto"> 
+    <textarea placeholder="Ingrese el texto aqui" 
+    name="cajatext" id="cajatext" class="cajatext" cols="30"
+    rows="10"></textarea>
+
+    <div class="alerta">
+        <img src="/imagenes/alerta.svg" alt="Alerta!">
+        <p>Solo letras minusculas y sin acentos</p>
+    </div>
+
+<div class="botones">
+    <input type="button"  class="btn-encriptar" 
+    value="Encriptar" onclick="encriptar()"/>
+
+    <input type="button" class="btn-desencriptar" 
+    value="Desencriptar"  onclick="desencriptar()"/>
+    <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+</div>
+</div>
+
+<div class="contenedor-personaje">
+    <img src="/imagenes/Muñeco.svg" alt="personaje" 
+    id="personaje"/>
+    <div class="contenedor-parrafo" id="contenedor-parrafo">
+        <h2 id="mensaje">Ningún  mensaje ha sido encontrado.</h2>
+        <p id="parrafo">Ingresa el texto que desees encriptar o desencriptar</p>
+    </div>
+   </div>
+ </div>
+    </body>
+    <script src='encriptadorJS.JS'></script>
+</html>
